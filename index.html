@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tesla</title>
 </head>
-<body>
-    <img src="img/logo.png" alt="Logo da Tesla">
-    <!-- muted = deixar o vídeo em mute autoplay = começar a tocar loop = em looping  -->
-    <video src="./img/model-y.mp4"  muted autoplay loop></video>
 
-    <h1>Model Y</h1>
-    <p>Parcelar a partir de 499 dólares</p>
-    <button>Comprar Agora</button>
-    <button>Faça um Test-Drive</button>
-    <p>Não garantimos seu veículo imediatamente. Consultar Estoque</p>
+
+<body>
+    <!-- muted = deixar o vídeo em mute autoplay = começar a tocar loop = em looping  -->
+    <img src="img/logo.png" alt="Logo da Tesla" class="Logo">
+            <!-- item 1 -->
+    <ul class="lista">
+        <li class="item">
+            <video src="./img/model-y.mp4" muted autoplay loop></video>
+
+            <div class="info-carro">
+                <h1>Model Y</h1>
+                <p class="subtitulo">Parcelar a partir de 499 dólares</p>
+            </div>
+
+            <div class="rodape">
+                <button>Comprar Agora</button>
+                <button class="test-drive">Faça um Test-Drive</button>
+                <p class="texto-rodape">Não garantimos seu veículo imediatamente. Consultar Estoque</p>
+            </div>
+        </li>
+        <!-- item 2 -->
+        <li class="item">
+           <img src="img/model-3.png" alt="Model 3" class="img-tesla">
+
+            <div class="info-carro">
+                <h1 style="color:#520609">Model 3</h1>
+                <p class="subtitulo">Compre Agora o seu Tesla</p>
+            </div>
+
+           
+        </li>
+        <!-- item 3 -->
+        <li class="item">
+           <img src="img/model-x.png" alt="Model X" class="img-tesla">
+
+            <div class="info-carro">
+                <h1 style="color:#85888B ;">Model Y</h1>
+                <p class="subtitulo">Adquira já o seu Model X</p>
+            </div>
+
+        </li>
+    </ul>
 </body>
+
 </html>

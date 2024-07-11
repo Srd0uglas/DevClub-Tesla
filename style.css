@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html{
+    /* scroll para pular a tela toda */
+    scroll-snap-type: y mandatory;
+}
+
+video, .img-tesla{
+    /* fazer com que o vídeo ocupe a tela inteira */
+    width: 100%;
+    height: 100%;
+    /* posicionar o vídeo numa posição exata que eu desejar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* por padrão o z index vem como 1, então -1 para fazer o vídeo ficar atrás de todo mundo */
+    z-index: -1;
+    /* fez com que o vídeo cobrisse a tela inteira junto com o position absilute */
+    object-fit: cover;
+    /* escurecer o vídeo */
+    filter: brightness(60%);
+    min-height: 100vh;
+}
+
+.Logo{
+    filter: brightness(100);
+    /* fez o vídeo ocupar o espaço do logo */
+    position: fixed;
+    /* Tamanho da Logo */
+    width: 150px;
+
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+.subtitulo{
+    color: white;
+}
+
+.item{
+    position: relative;
+    display: flex;   
+    /* cria um espaçamento entre os itens botões na esquerda e textos na direita*/
+    justify-content: space-between;
+    /* deixar um item embaixo do outro */
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    /* pula a tela toda (deixa a próx foto inteira ao scrollar) */
+    scroll-snap-align: start ;
+}
+
+.info-carro{
+    top: 80px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.rodape{
+    text-align: center;
+}
+
+button{
+    background-color: rgba(34,34,34,0.8);
+    color: aliceblue;
+    /* 7px cima e baixo 80px lados */
+    padding: 7px 80px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.test-drive{
+    color: black;
+    background-color: rgba(217, 218, 219, 0.979);
+}
+
+.texto-rodape{
+    color: white;
+    margin-top: 10px;
+}

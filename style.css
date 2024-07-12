@@ -13,6 +13,7 @@ html{
     scroll-snap-type: y mandatory;
 }
 
+
 video, .img-tesla{
     /* fazer com que o vídeo ocupe a tela inteira */
     width: 100%;
@@ -35,8 +36,9 @@ video, .img-tesla{
 }
 
 .Logo{
+    /* Clarear o Logo */
     filter: brightness(100);
-    /* fez o vídeo ocupar o espaço do logo */
+    /* fez o logo ficar em cima do vídeo transparente */
     position: fixed;
     /* Tamanho da Logo */
     width: 150px;
@@ -70,6 +72,7 @@ h1{
     top: 80px;
     text-align: center;
     margin-top: 40px;
+    animation:moverTitle 1s 1 alternate ease-in-out ;;
 
 }
 .rodape{
@@ -97,7 +100,7 @@ button{
 }
 
 .form{
-    position: fixed;
+    position: absolute;
     /* o form subiu */
     top: 20px;
     width: 600px;
@@ -105,7 +108,28 @@ button{
 
     z-index: 3;
     /* fazer o form sumir para no js fazer a função para ele aparecer */
-    left: -50%;
-    transition: 1.5s;
+    left: -80%;
+    transition: 1.5s ease-in-out;
   
+}
+.form2{
+    position: absolute;
+    /* o form subiu */
+    top: 40px;
+    width: 600px;
+    height: 50%;
+    z-index: 3;
+    /* fazer o form sumir para no js fazer a função para ele aparecer */
+    left: -40%;
+    transition: 1.5s ease-in-out;
+
+}
+
+@keyframes moverTitle{
+    to{
+        transform: scaleX(0);
+    }
+    form{
+        transform: scaleX(5px);
+    }
 }

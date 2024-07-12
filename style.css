@@ -17,14 +17,18 @@ video, .img-tesla{
     /* fazer com que o vídeo ocupe a tela inteira */
     width: 100%;
     height: 100%;
+
     /* posicionar o vídeo numa posição exata que eu desejar */
     position: absolute;
     top: 0;
     left: 0;
+
     /* por padrão o z index vem como 1, então -1 para fazer o vídeo ficar atrás de todo mundo */
     z-index: -1;
-    /* fez com que o vídeo cobrisse a tela inteira junto com o position absilute */
+
+    /* fez com que o vídeo cobrisse a tela inteira junto com o position absolute */
     object-fit: cover;
+    
     /* escurecer o vídeo */
     filter: brightness(60%);
     min-height: 100vh;
@@ -90,4 +94,18 @@ button{
 .texto-rodape{
     color: white;
     margin-top: 10px;
+}
+
+.form{
+    position: fixed;
+    /* o form subiu */
+    top: 20px;
+    width: 600px;
+    height: 50%;
+
+    z-index: 3;
+    /* fazer o form sumir para no js fazer a função para ele aparecer */
+    left: -50%;
+    transition: 1.5s;
+  
 }
